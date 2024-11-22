@@ -60,7 +60,6 @@ text-transform: uppercase;
 }
 .main {
   height: 800vh;
-  background: green;
   position: relative;
 }
 .slide {
