@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Thunder";
+  src: url(fonts/Thunder-BlackLC.otf);
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(fonts/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Gotham";
+    src: url(fonts/GothamMedium.ttf);
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+html{
+  cursor: none;
+}
+
+#nav{
+  background: #6A85FF;
+  z-index: 10;
+  visibility: hidden;
+}
+
+#invertedcursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: white;
+  opacity: 0.8;
+  border-radius: 50%;
+  top: var(--y, 0);
+  left: var(--x, 0);
+  pointer-events: none;
+  transform: translate(-60%, -60%);
+  z-index: 12;
+  transition: transform 5s;
+}
+
+.btn{
+  color: #FFF;
+font-family: Thunder;
+font-size: 134.559px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+.main {
+  height: 800vh;
+  background: green;
+  position: relative;
+}
+.slide {
+  background: blue;
+  width: 11872px;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #ffbc74 11.88%,
+    #2dffc7 14.57%,
+    #2dffc7 35.67%,
+    #2dff5e 38.09%,
+    #2dff5e 58.48%,
+    #f2fd4e 61.41%,
+    #f2fd4e 87.82%,
+    #fd4e4e 91.25%
+  );
+  
+}
+.nameH {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Thunder";
+  font-size: 276.417px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.abouttext {
+  width: 668px;
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 15.857px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.c1{
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.sft {
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.imgs {
+  box-shadow: 14.203px 11.836px 25.566px 3.551px rgba(0, 38, 255, 0.17);
+}
+.titletxt {
+  color: #fff;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  font-family: Rubik;
+  font-size: 17.765px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.comp {
+  color: #fff;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  font-family: Rubik;
+  font-size: 17.765px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.time {
+  color: #fff;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  font-family: Rubik;
+  font-size: 17.765px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 440px;
+  height: 125px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  border: 7px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.abut{
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Thunder';
+font-size: 62.136px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.rev{
+    color: #ADBA00;
+text-align: center;
+font-family: 'Rubik';
+font-size: 24.93px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: uppercase;
+}
+.cli{
+    color: #ADBA00;
+font-family: 'Rubik';
+font-size: 25.739px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.lin{
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Gotham;
+font-size: 72.188px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.bookbtn{
+    width: 440px;
+height: 145.556px;
+flex-shrink: 0;
+    border-radius: 68.889px;
+border: 4.444px solid #FFF;
+box-shadow: 0px 4.444px 4.444px 0px rgba(0, 0, 0, 0.25);
+}
+.h1{
+    color: #FFF;
+text-shadow: 0px 7.6px 7.6px rgba(0, 0, 0, 0.25);
+font-family: Thunder;
+font-size: 138.191px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+}
+.icons{
+    width: 37px;
+height: 37px;
+flex-shrink: 0;
+    border-radius: 6.589px;
+border: 1.521px solid #FFF;
+}
+
+.endtxt{
+    color: #FFF;
+text-align: center;
+font-family: 'Diether';
+font-size: 13.868px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}

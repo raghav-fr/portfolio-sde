@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="invertedcursor"></div>
+    <div id="nav" class="nav h-screen w-screen fixed z-10 ">
+        <svg id="navx" class="navx1 absolute right-[1.5%] top-[3.5%] w-[57px] h-[57px]"
+            xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M57 28.5C57 44.2401 44.2401 57 28.5 57C12.7599 57 0 44.2401 0 28.5C0 12.7599 12.7599 0 28.5 0C44.2401 0 57 12.7599 57 28.5ZM15.4142 42.2843C14.6332 41.5032 14.6332 40.2369 15.4142 39.4558L26.0208 28.8492L15.4142 18.2426C14.6332 17.4616 14.6332 16.1953 15.4142 15.4142C16.1953 14.6332 17.4616 14.6332 18.2426 15.4142L28.8492 26.0208L39.4558 15.4142C40.2369 14.6332 41.5032 14.6332 42.2843 15.4142C43.0653 16.1953 43.0653 17.4616 42.2843 18.2426L31.6777 28.8492L42.2843 39.4558C43.0653 40.2369 43.0653 41.5032 42.2843 42.2843C41.5032 43.0653 40.2369 43.0653 39.4558 42.2843L28.8492 31.6777L18.2426 42.2843C17.4616 43.0653 16.1953 43.0653 15.4142 42.2843Z"
+                fill="white" />
+        </svg>
+
+        <div class="hd1 absolute grid top-[10%]">
+            <div class="btn tx1"><a href="/">home</a></div>
+            <div class="btn tx2">work</div>
+            <div class="btn tx3">about me</div>
+            <div class="btn tx4"><a href="contactme.html">contact</a></div>
+        </div>
+        <div class="socials flex absolute gap-[15px] bottom-[5%] right-[1.5%] ">
+            <div class="icons flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="29" viewBox="0 0 27 29" fill="none">
+                    <g clip-path="url(#clip0_23_264)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.3101 7.39622C16.9116 6.77326 17.8426 6.84115 17.9109 6.84455L21.8065 6.84285L21.8916 0.560633L21.3038 0.399373C20.9272 0.295849 19.7744 0.0547945 17.2335 0.0547945C12.7091 0.0547945 9.66858 3.59396 9.66858 8.8594V10.2734H5.1123V17.0631H9.66858V28.9452H15.7436V17.0631H20.5459L21.3813 10.2734H15.7436V9.23284C15.7436 8.4062 15.935 7.78664 16.3101 7.39622Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_23_264">
+                            <rect width="25.8493" height="28.8904" fill="white"
+                                transform="translate(0.575195 0.0548096)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="icons flex justify-center items-center">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M21.1839 5.40569C22.6019 5.41689 23.9578 5.98873 24.9556 6.99634C25.9533 8.00395 26.5118 9.36544 26.5091 10.7835L26.4566 21.4854C26.4454 22.9033 25.8735 24.2593 24.8659 25.2571C23.8583 26.2548 22.4968 26.8133 21.0788 26.8106L10.3769 26.758C8.95894 26.7469 7.603 26.175 6.60524 25.1674C5.60747 24.1598 5.04897 22.7983 5.05169 21.3803L5.10425 10.6784C5.11544 9.2604 5.68728 7.90445 6.69489 6.90668C7.7025 5.90892 9.064 5.35041 10.482 5.35314L21.1839 5.40569ZM21.1944 3.26544L10.4925 3.21288C8.50733 3.20891 6.60124 3.99074 5.19062 5.38758C3.77999 6.78441 2.97951 8.68273 2.96398 10.6679L2.91142 21.3697C2.90746 23.3549 3.68927 25.261 5.0861 26.6716C6.48294 28.0823 8.38127 28.8828 10.3664 28.8983L21.0683 28.9508C23.0534 28.9548 24.9595 28.173 26.3702 26.7761C27.7808 25.3793 28.5813 23.481 28.5968 21.4959L28.6494 10.794C28.6533 8.80879 27.8715 6.90272 26.4746 5.49211C25.0778 4.0815 23.1795 3.28098 21.1944 3.26544Z"
+                        fill="white" />
+                    <path
+                        d="M22.7631 10.7651C22.3386 10.7621 21.9327 10.5906 21.6346 10.2884C21.3365 9.98629 21.1705 9.57815 21.1731 9.15368C21.1758 8.72921 21.3468 8.32313 21.6486 8.02468C21.9504 7.72623 22.3584 7.5598 22.7829 7.56197C23.2074 7.56413 23.6136 7.73471 23.9124 8.03622C24.2112 8.33774 24.378 8.74553 24.3763 9.17C24.3746 9.59448 24.2045 10.0009 23.9033 10.3C23.6021 10.5991 23.1945 10.7664 22.77 10.7652L22.7631 10.7651Z"
+                        fill="white" />
+                    <path
+                        d="M15.8013 11.8008C16.648 11.8049 17.4745 12.0601 18.1762 12.534C18.8779 13.0078 19.4233 13.6791 19.7435 14.463C20.0637 15.2469 20.1442 16.1081 19.9749 16.9377C19.8057 17.7673 19.3942 18.5281 18.7925 19.1239C18.1909 19.7197 17.4261 20.1237 16.5948 20.2848C15.7635 20.4459 14.9032 20.3569 14.1225 20.029C13.3418 19.7012 12.6759 19.1492 12.2089 18.4428C11.742 17.7365 11.495 16.9076 11.4991 16.0608C11.5019 15.4986 11.6154 14.9425 11.8331 14.4241C12.0508 13.9058 12.3684 13.4354 12.7679 13.0398C13.1674 12.6442 13.6409 12.3312 14.1614 12.1186C14.6818 11.906 15.2391 11.798 15.8013 11.8008ZM15.8118 9.66052C14.5417 9.65428 13.2984 10.0248 12.239 10.7252C11.1795 11.4256 10.3515 12.4244 9.85973 13.5954C9.36795 14.7663 9.23446 16.0568 9.47611 17.3037C9.71776 18.5505 10.3237 19.6977 11.2173 20.6001C12.111 21.5026 13.2521 22.1198 14.4965 22.3737C15.7409 22.6276 17.0327 22.5067 18.2084 22.0265C19.3841 21.5462 20.391 20.7281 21.1018 19.6756C21.8126 18.6231 22.1953 17.3834 22.2016 16.1134C22.2099 14.4104 21.5414 12.7738 20.3431 11.5636C19.1448 10.3535 17.5148 9.66889 15.8118 9.66052Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="icons flex justify-center items-center">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                    <path
+                        d="M26.3368 0.281491L2.5535 0.537956C1.9374 0.514695 1.33731 0.737134 0.885211 1.15633C0.433114 1.57553 0.166052 2.15714 0.142787 2.77324L0.142443 2.78359L0.399487 26.6197C0.422867 27.2608 0.691057 27.8686 1.1489 28.3179C1.60674 28.7673 2.21938 29.0241 2.86079 29.0354L26.6371 28.7791C27.2625 28.7478 27.8504 28.4713 28.2734 28.0096C28.6964 27.5479 28.9204 26.9381 28.897 26.3124L28.6399 2.47627C28.6434 1.89683 28.4166 1.33973 28.0093 0.92753C27.6021 0.51533 27.0477 0.281793 26.4683 0.278296C26.4245 0.278052 26.3806 0.279117 26.3368 0.281491ZM9.20824 24.223L5.12573 24.267L4.98886 11.5736L9.07141 11.5295L9.20824 24.223ZM7.15047 9.6201L7.12122 9.62042C6.53382 9.62297 5.96933 9.39258 5.55149 8.97972C5.13365 8.56686 4.89652 8.0052 4.89203 7.41781C4.88755 6.83043 5.11611 6.26521 5.52759 5.84601C5.93907 5.42682 6.49994 5.18782 7.08731 5.1814C7.67468 5.17498 8.24064 5.40165 8.66119 5.81175C9.08174 6.22185 9.32258 6.78193 9.33094 7.36927C9.33929 7.95662 9.11447 8.52333 8.70575 8.94523C8.29704 9.36713 7.73779 9.60981 7.15047 9.6201ZM24.1287 24.0622L20.0462 24.1062L19.9713 17.1656C19.9534 15.5028 19.347 14.3732 17.87 14.3891C17.4081 14.3978 16.9601 14.5495 16.5881 14.8235C16.216 15.0974 15.9382 15.4801 15.7928 15.9186C15.6876 16.2423 15.6433 16.5828 15.6624 16.9227L15.7403 24.1526L11.6578 24.1966L11.521 11.5032L15.6035 11.4591L15.6225 13.2256C15.9873 12.5786 16.5196 12.0419 17.1636 11.6718C17.8076 11.3017 18.5394 11.1119 19.282 11.1224C21.9619 11.0934 24.0082 12.8381 24.0493 16.6465L24.1287 24.0622Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="icons flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                    <path
+                        d="M12.5005 0.214813C9.3322 0.700961 6.42768 2.26257 4.2748 4.63737C2.12191 7.01217 0.851801 10.0555 0.677817 13.2562C0.503833 16.4569 1.43657 19.6199 3.31935 22.2141C5.20213 24.8083 7.92026 26.6755 11.0172 27.5022C10.7965 26.4498 10.714 25.373 10.7719 24.2992C10.8648 23.1375 11.3925 16.5059 11.3925 16.5059C10.9858 15.8652 10.7205 15.1449 10.6146 14.3934C10.301 12.3483 11.2494 10.6393 12.7278 10.4126C13.9844 10.2199 14.7326 11.0698 14.9055 12.197C15.0991 13.4598 14.5812 15.4684 14.4368 17.2811C14.4043 17.6178 14.4514 17.9575 14.5742 18.2726C14.6971 18.5878 14.8923 18.8696 15.1442 19.0955C15.396 19.3213 15.6974 19.4848 16.024 19.5727C16.3506 19.6606 16.6933 19.6705 17.0245 19.6016C19.6363 19.2011 20.8832 15.5738 20.2729 11.5945C19.8091 8.57004 17.4235 6.62202 13.7214 7.18976C9.53887 7.83117 7.406 11.3548 7.94067 14.8413C8.05035 15.8307 8.52292 16.7444 9.26703 17.4056C9.39114 17.4797 9.48853 17.5912 9.54517 17.7242C9.60182 17.8571 9.61478 18.0046 9.5822 18.1454C9.55317 18.4084 9.49886 19.0408 9.46889 19.2976C9.46852 19.3739 9.44995 19.4491 9.41472 19.5168C9.37949 19.5845 9.32858 19.6428 9.26629 19.6868C9.204 19.7309 9.1321 19.7595 9.05655 19.7702C8.98099 19.7809 8.90395 19.7734 8.83186 19.7484C6.7829 19.2556 5.56051 17.2869 5.19587 14.9091C4.59507 10.9915 7.18218 5.78419 13.7363 4.77909C19.003 3.97141 23.0557 7.2525 23.683 11.3427C24.5133 16.7572 22.1208 21.26 17.6857 21.9402C16.195 22.1688 14.673 21.5763 14.0527 20.7383C14.0527 20.7383 13.7394 24.0396 13.6614 24.682C13.5033 25.7775 13.1892 26.8448 12.7288 27.8513C14.7126 28.1208 16.7311 27.9606 18.6475 27.3814C20.5639 26.8023 22.3333 25.8177 23.8357 24.4946C25.3382 23.1715 26.5385 21.5408 27.3553 19.713C28.1721 17.8852 28.5863 15.9032 28.5697 13.9012C28.5532 11.8993 28.1063 9.92437 27.2594 8.11034C26.4125 6.29631 25.1854 4.68563 23.6613 3.38754C22.1372 2.08945 20.3518 1.1343 18.4261 0.586892C16.5004 0.0394797 14.4796 -0.0874513 12.5005 0.214813Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="icons flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                        d="M22.2932 3.83319L24.7213 2.94805C24.7213 2.94805 22.9783 5.6254 22.6005 5.83716C22.6398 6.34318 22.7169 6.84557 22.831 7.34013C21.1869 28.7186 2.05343 22.3203 2.05343 22.3203C8.53928 21.4795 8.68318 18.7397 8.68318 18.7397C4.84123 18.7648 3.71327 16.4252 3.71327 16.4252C4.07766 16.5514 4.47578 16.5386 4.83137 16.3895C5.18696 16.2403 5.47502 15.9653 5.6404 15.6169C1.42102 15.1872 1.36516 11.1448 1.36516 11.1448C2.16855 11.5561 3.06408 11.7542 3.96599 11.7202C3.43059 11.2383 -1.07611 7.26315 0.867357 4.55507C0.867357 4.55507 4.44122 9.13475 11.875 8.45624L12.3606 8.27921C12.2201 7.93144 12.1294 7.56554 12.0913 7.19238C11.8774 5.79724 12.2264 4.37424 13.0616 3.23643C13.8969 2.09862 15.1499 1.33922 16.545 1.12526C20.052 0.58745 21.1108 2.47617 21.1108 2.47617L23.3853 0.58905C23.3352 0.596744 23.4689 3.14013 22.2932 3.83319Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="container h-screen">
+        <div id="navbtn" class="navbtn fixed z-10 right-[1.5%] top-[3.5%] w-[57px] h-[57px]"><svg
+                xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M28.5 57C44.2401 57 57 44.2401 57 28.5C57 12.7599 44.2401 0 28.5 0C12.7599 0 0 12.7599 0 28.5C0 44.2401 12.7599 57 28.5 57ZM12 15C10.8954 15 10 15.8954 10 17C10 18.1046 10.8954 19 12 19H46C47.1046 19 48 18.1046 48 17C48 15.8954 47.1046 15 46 15H12ZM10 28C10 26.8954 10.8954 26 12 26H46C47.1046 26 48 26.8954 48 28C48 29.1046 47.1046 30 46 30H12C10.8954 30 10 29.1046 10 28ZM12 37C10.8954 37 10 37.8954 10 39C10 40.1046 10.8954 41 12 41H46C47.1046 41 48 40.1046 48 39C48 37.8954 47.1046 37 46 37H12Z"
+                    fill="white" />
+            </svg></div>
+        <div class="main w-full">
+            <div class="slide sticky top-[0%] flex items-start">
+                <div id="home" class="slide1 w-screen h-screen relative">
+                    <div class="abouttext absolute top-[5%] left-[1%]">
+                        passionate <span class="sft">Software Engineer</span>
+                        dedicated to building innovative, scalable, and user-focused solutions.With expertise in
+                        full-stack development, cloud computing AND AI integration, I thrive on solving complex problems
+                        and turning ideas into impactful applications.
+
+                        Let's code the future together.
+                    </div>
+                    <div class="circles flex absolute top-[45%] -translate-y-1/2 left-[1%]">
+                        <div class="scrolld flex justify-center items-center">
+                            <img src="/fonts/imgs/Group 8.svg" class="c1">
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="16" height="43"
+                                viewBox="0 0 16 43" fill="none">
+                                <path
+                                    d="M7.29289 42.7071C7.68342 43.0976 8.31658 43.0976 8.70711 42.7071L15.0711 36.3431C15.4616 35.9526 15.4616 35.3195 15.0711 34.9289C14.6805 34.5384 14.0474 34.5384 13.6569 34.9289L8 40.5858L2.34315 34.9289C1.95262 34.5384 1.31946 34.5384 0.928932 34.9289C0.538408 35.3195 0.538408 35.9526 0.928932 36.3431L7.29289 42.7071ZM7 0L7 42H9L9 0L7 0Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="nameH na absolute bottom-[-5%] left-[1%]">
+                        bhavya Bansal
+                    </div>
+                </div>
+                <div class="slide2 w-[200vw] h-screen relative">
+                    <div class="nameH scrwork absolute top-[50%] -translate-y-1/2 left-[30%] -translate-x-1/2">
+                        Work
+                    </div>
+                    <div class="img1 absolute left-[5%]">
+                        <img class="" src="/fonts/imgs/Ellipse 11.png" alt="" srcset="">
+                    </div>
+                    <div class="img2 absolute bottom-[10%] left-[17%]">
+                        <img class="" src="/fonts/imgs/Ellipse 5.png" alt="" srcset="">
+                    </div>
+                    <div class="img3 absolute left-[40%] top-[-8%]">
+                        <img class="" src="/fonts/imgs/Ellipse 6.png" alt="" srcset="">
+                    </div>
+                    <div class="img4 absolute left-[45%] w-[233px] bottom-[5%]">
+                        <img class="" src="/fonts/imgs/Ellipse 7.png" alt="" srcset="">
+                    </div>
+                    <div class="img5 absolute right-[10%] top-[-20%] w-[393px]">
+                        <img class="" src="/fonts/imgs/Ellipse 11.png" alt="" srcset="">
+                    </div>
+                    <div class="img6 absolute right-[30%] top-[45%]">
+                        <img class="" src="/fonts/imgs/Ellipse 5.png" alt="" srcset="">
+                    </div>
+                    <div class="img7 absolute right-[2%] w-[200px] bottom-[29%]">
+                        <img class="" src="/fonts/imgs/Ellipse 6.png" alt="" srcset="">
+                    </div>
+                    <div class="img8 absolute right-[15%] bottom-[-5%] w-[250px]">
+                        <img class="" src="/fonts/imgs/Ellipse 7.png" alt="" srcset="">
+                    </div>
+
+                </div>
+                <div class="slide3 w-[200vw] h-screen relative">
+                    <div class="nameH exp absolute top-[50%] -translate-y-1/2 left-[0%]">
+                        experience
+                    </div>
+                    <div class="bar b1 grid gap-[10px] absolute left-[38%] justify-items-center">
+                        <img src="/fonts/imgs/bar.png" alt="" srcset="">
+                        <div class="text grid justify-items-center">
+                            <div class="titletxt">
+                                Chief Technology Officer
+                            </div>
+                            <div class="comp">
+                                Persist Ventures
+                            </div>
+                            <div class="time mt-[20px]">
+                                Apr 2024 - Present
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar b2 grid gap-[10px] absolute left-[50%] bottom-[0%] justify-items-center">
+
+                        <div class="text grid justify-items-center">
+                            <div class="titletxt">
+                                CTO @fACESEARCHAI
+                            </div>
+                            <div class="comp">
+                                Persist Ventures
+                            </div>
+                            <div class="time mt-[20px]">
+                                Nov 2023 - Present
+                            </div>
+                            <img class="rotate-[180deg]" src="/fonts/imgs/bar.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="bar b3 grid gap-[10px] absolute left-[62%] justify-items-center">
+                        <img src="/fonts/imgs/bar.png" alt="" srcset="">
+                        <div class="text grid justify-items-center">
+                            <div class="titletxt">
+                                Full Stack Engineer
+                            </div>
+                            <div class="comp">
+                                Persist Ventures
+                            </div>
+                            <div class="time mt-[20px]">
+                                Oct 2023 - Present
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar b4 grid gap-[10px] absolute left-[74%] bottom-[0%] justify-items-center">
+
+                        <div class="text grid justify-items-center">
+                            <div class="titletxt">
+                                AI Software Developer
+                            </div>
+                            <div class="comp">
+                                HeyDaw Technologies
+                            </div>
+                            <div class="time mt-[20px]">
+                                Aug 2023 - Oct 2023
+                            </div>
+                            <img class="rotate-[180deg]" src="/fonts/imgs/bar.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="bar b5 grid gap-[10px] absolute left-[86%] justify-items-center">
+                        <img src="/fonts/imgs/bar.png" alt="" srcset="">
+                        <div class="text grid justify-items-center">
+                            <div class="titletxt">
+                                Software Engineer
+                            </div>
+                            <div class="comp">
+                                Telaverge Communications
+                            </div>
+                            <div class="time mt-[20px]">
+                                May 2022 - Apr 2023
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="slide4 w-[240vw] h-screen relative flex">
+                    <div class="fstcont">
+                        <div class="clients absolute flex gap-[120px] top-[35%] -translate-y-1/2 left-[5%]">
+                            <img src="/fonts/imgs/Subtract.png" alt="" srcset="">
+                            <img src="/fonts/imgs/Subtract (1).png" alt="">
+                            <img src="/fonts/imgs/Subtract (2).png" alt="">
+                        </div>
+                        <div class="box absolute bottom-[13%] left-[21.5%] flex justify-center items-center gap-[19px]">
+                            <div class="abut">
+                                explore ABOUT ME
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="50" viewBox="0 0 55 50"
+                                fill="none">
+                                <g filter="url(#filter0_d_20_226)">
+                                    <path
+                                        d="M5.39303 37.474C4.33534 38.3616 4.19738 39.9384 5.08489 40.9961C5.97239 42.0538 7.54928 42.1918 8.60697 41.3043L5.39303 37.474ZM50.4739 5.21791C50.5942 3.84245 49.5767 2.62987 48.2013 2.50953L25.7869 0.548531C24.4114 0.428194 23.1988 1.44567 23.0785 2.82113C22.9582 4.19659 23.9756 5.40917 25.3511 5.5295L45.275 7.27262L43.5319 27.1965C43.4115 28.572 44.429 29.7846 45.8045 29.9049C47.1799 30.0252 48.3925 29.0077 48.5129 27.6323L50.4739 5.21791ZM8.60697 41.3043L49.5903 6.91513L46.3764 3.08491L5.39303 37.474L8.60697 41.3043Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_20_226" x="0.5" y="0.538867" width="53.9834" height="49.3504"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_20_226" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_226"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="testimo flex">
+                        <div class="t1 right-[35%] bottom-[0%] absolute grid justify-items-center items-center">
+                            <img src="/fonts/imgs/Subtract (3).png">
+                            <div class="rev absolute w-[80%]">
+                                bhavya is awesome. i just loved his work
+                            </div>
+                            <div class="cli absolute bottom-[15%]">
+                                -SAMUAL
+                            </div>
+                        </div>
+                        <div class="t2 right-[20%] top-[0%] absolute grid justify-items-center items-center">
+                            <img src="/fonts/imgs/Subtract (4).png" alt="">
+                            <div class="rev absolute w-[80%] top-[20%]">
+                                Working with bhavya has been a game changer for us. His can-do-mentality, speed and
+                                attention to detail has helped us achieve far more that we thought was possible.”
+                            </div>
+                            <div class="cli absolute bottom-[25%]">
+                                -derek
+                            </div>
+                        </div>
+                        <div class="t3 right-[5%] bottom-[0%] absolute grid justify-items-center items-center">
+                            <img src="/fonts/imgs/Subtract (3).png" alt="">
+                            <div class="rev absolute w-[80%]">
+                                bhavya is one of the best I've worked with! Very responsive and delivers high-quality
+                                work. Highly recommend him!”
+                            </div>
+                            <div class="cli absolute bottom-[15%]">
+                                -SAMU
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="slide5 w-[100vw] h-screen relative">
+                    <div class="line absolute left-[0%] w-[300vw] h-[160px] -translate-x-[45%] rotate-[-90deg]">
+                        <div class="lin l1 absolute top-0 right-[10%]">
+                            book a call - book a call -book a call - book a call -book a call
+                        </div>
+                        <div class="lin l2 absolute bottom-0 left-[20%]">
+                            book a call - book a call -book a call - book a call -book a call
+                        </div>
+                    </div>
+                    <div
+                        class="bookbtn absolute top-[20%] left-1/2 -translate-x-[15%] flex justify-center items-center" onclick="window.location.href='contactme.html'">
+                        <div class="h1 absolute top-1/2 -translate-y-[40%]">contact</div>
+                    </div>
+                    <div class="socials flex absolute gap-[15px] bottom-[20%] right-1/2 translate-x-[110%] ">
+                        <div class="icons flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="29" viewBox="0 0 17 29" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3101 7.39622C11.9116 6.77326 12.8426 6.84115 12.9109 6.84455L16.8065 6.84285L16.8916 0.560633L16.3038 0.399373C15.9272 0.295849 14.7744 0.0547945 12.2335 0.0547945C7.70915 0.0547945 4.66858 3.59396 4.66858 8.8594V10.2734H0.112305V17.0631H4.66858V28.9452H10.7436V17.0631H15.5459L16.3813 10.2734H10.7436V9.23284C10.7436 8.4062 10.935 7.78664 11.3101 7.39622Z" fill="white"/>
+                              </svg>
+                        </div>
+                        <div class="icons flex justify-center items-center">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M21.1839 5.40569C22.6019 5.41689 23.9578 5.98873 24.9556 6.99634C25.9533 8.00395 26.5118 9.36544 26.5091 10.7835L26.4566 21.4854C26.4454 22.9033 25.8735 24.2593 24.8659 25.2571C23.8583 26.2548 22.4968 26.8133 21.0788 26.8106L10.3769 26.758C8.95894 26.7469 7.603 26.175 6.60524 25.1674C5.60747 24.1598 5.04897 22.7983 5.05169 21.3803L5.10425 10.6784C5.11544 9.2604 5.68728 7.90445 6.69489 6.90668C7.7025 5.90892 9.064 5.35041 10.482 5.35314L21.1839 5.40569ZM21.1944 3.26544L10.4925 3.21288C8.50733 3.20891 6.60124 3.99074 5.19062 5.38758C3.77999 6.78441 2.97951 8.68273 2.96398 10.6679L2.91142 21.3697C2.90746 23.3549 3.68927 25.261 5.0861 26.6716C6.48294 28.0823 8.38127 28.8828 10.3664 28.8983L21.0683 28.9508C23.0534 28.9548 24.9595 28.173 26.3702 26.7761C27.7808 25.3793 28.5813 23.481 28.5968 21.4959L28.6494 10.794C28.6533 8.80879 27.8715 6.90272 26.4746 5.49211C25.0778 4.0815 23.1795 3.28098 21.1944 3.26544Z"
+                                    fill="white" />
+                                <path
+                                    d="M22.7631 10.7651C22.3386 10.7621 21.9327 10.5906 21.6346 10.2884C21.3365 9.98629 21.1705 9.57815 21.1731 9.15368C21.1758 8.72921 21.3468 8.32313 21.6486 8.02468C21.9504 7.72623 22.3584 7.5598 22.7829 7.56197C23.2074 7.56413 23.6136 7.73471 23.9124 8.03622C24.2112 8.33774 24.378 8.74553 24.3763 9.17C24.3746 9.59448 24.2045 10.0009 23.9033 10.3C23.6021 10.5991 23.1945 10.7664 22.77 10.7652L22.7631 10.7651Z"
+                                    fill="white" />
+                                <path
+                                    d="M15.8013 11.8008C16.648 11.8049 17.4745 12.0601 18.1762 12.534C18.8779 13.0078 19.4233 13.6791 19.7435 14.463C20.0637 15.2469 20.1442 16.1081 19.9749 16.9377C19.8057 17.7673 19.3942 18.5281 18.7925 19.1239C18.1909 19.7197 17.4261 20.1237 16.5948 20.2848C15.7635 20.4459 14.9032 20.3569 14.1225 20.029C13.3418 19.7012 12.6759 19.1492 12.2089 18.4428C11.742 17.7365 11.495 16.9076 11.4991 16.0608C11.5019 15.4986 11.6154 14.9425 11.8331 14.4241C12.0508 13.9058 12.3684 13.4354 12.7679 13.0398C13.1674 12.6442 13.6409 12.3312 14.1614 12.1186C14.6818 11.906 15.2391 11.798 15.8013 11.8008ZM15.8118 9.66052C14.5417 9.65428 13.2984 10.0248 12.239 10.7252C11.1795 11.4256 10.3515 12.4244 9.85973 13.5954C9.36795 14.7663 9.23446 16.0568 9.47611 17.3037C9.71776 18.5505 10.3237 19.6977 11.2173 20.6001C12.111 21.5026 13.2521 22.1198 14.4965 22.3737C15.7409 22.6276 17.0327 22.5067 18.2084 22.0265C19.3841 21.5462 20.391 20.7281 21.1018 19.6756C21.8126 18.6231 22.1953 17.3834 22.2016 16.1134C22.2099 14.4104 21.5414 12.7738 20.3431 11.5636C19.1448 10.3535 17.5148 9.66889 15.8118 9.66052Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="icons flex justify-center items-center">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30"
+                                fill="none">
+                                <path
+                                    d="M26.3368 0.281491L2.5535 0.537956C1.9374 0.514695 1.33731 0.737134 0.885211 1.15633C0.433114 1.57553 0.166052 2.15714 0.142787 2.77324L0.142443 2.78359L0.399487 26.6197C0.422867 27.2608 0.691057 27.8686 1.1489 28.3179C1.60674 28.7673 2.21938 29.0241 2.86079 29.0354L26.6371 28.7791C27.2625 28.7478 27.8504 28.4713 28.2734 28.0096C28.6964 27.5479 28.9204 26.9381 28.897 26.3124L28.6399 2.47627C28.6434 1.89683 28.4166 1.33973 28.0093 0.92753C27.6021 0.51533 27.0477 0.281793 26.4683 0.278296C26.4245 0.278052 26.3806 0.279117 26.3368 0.281491ZM9.20824 24.223L5.12573 24.267L4.98886 11.5736L9.07141 11.5295L9.20824 24.223ZM7.15047 9.6201L7.12122 9.62042C6.53382 9.62297 5.96933 9.39258 5.55149 8.97972C5.13365 8.56686 4.89652 8.0052 4.89203 7.41781C4.88755 6.83043 5.11611 6.26521 5.52759 5.84601C5.93907 5.42682 6.49994 5.18782 7.08731 5.1814C7.67468 5.17498 8.24064 5.40165 8.66119 5.81175C9.08174 6.22185 9.32258 6.78193 9.33094 7.36927C9.33929 7.95662 9.11447 8.52333 8.70575 8.94523C8.29704 9.36713 7.73779 9.60981 7.15047 9.6201ZM24.1287 24.0622L20.0462 24.1062L19.9713 17.1656C19.9534 15.5028 19.347 14.3732 17.87 14.3891C17.4081 14.3978 16.9601 14.5495 16.5881 14.8235C16.216 15.0974 15.9382 15.4801 15.7928 15.9186C15.6876 16.2423 15.6433 16.5828 15.6624 16.9227L15.7403 24.1526L11.6578 24.1966L11.521 11.5032L15.6035 11.4591L15.6225 13.2256C15.9873 12.5786 16.5196 12.0419 17.1636 11.6718C17.8076 11.3017 18.5394 11.1119 19.282 11.1224C21.9619 11.0934 24.0082 12.8381 24.0493 16.6465L24.1287 24.0622Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="icons flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                fill="none">
+                                <path
+                                    d="M12.5005 0.214813C9.3322 0.700961 6.42768 2.26257 4.2748 4.63737C2.12191 7.01217 0.851801 10.0555 0.677817 13.2562C0.503833 16.4569 1.43657 19.6199 3.31935 22.2141C5.20213 24.8083 7.92026 26.6755 11.0172 27.5022C10.7965 26.4498 10.714 25.373 10.7719 24.2992C10.8648 23.1375 11.3925 16.5059 11.3925 16.5059C10.9858 15.8652 10.7205 15.1449 10.6146 14.3934C10.301 12.3483 11.2494 10.6393 12.7278 10.4126C13.9844 10.2199 14.7326 11.0698 14.9055 12.197C15.0991 13.4598 14.5812 15.4684 14.4368 17.2811C14.4043 17.6178 14.4514 17.9575 14.5742 18.2726C14.6971 18.5878 14.8923 18.8696 15.1442 19.0955C15.396 19.3213 15.6974 19.4848 16.024 19.5727C16.3506 19.6606 16.6933 19.6705 17.0245 19.6016C19.6363 19.2011 20.8832 15.5738 20.2729 11.5945C19.8091 8.57004 17.4235 6.62202 13.7214 7.18976C9.53887 7.83117 7.406 11.3548 7.94067 14.8413C8.05035 15.8307 8.52292 16.7444 9.26703 17.4056C9.39114 17.4797 9.48853 17.5912 9.54517 17.7242C9.60182 17.8571 9.61478 18.0046 9.5822 18.1454C9.55317 18.4084 9.49886 19.0408 9.46889 19.2976C9.46852 19.3739 9.44995 19.4491 9.41472 19.5168C9.37949 19.5845 9.32858 19.6428 9.26629 19.6868C9.204 19.7309 9.1321 19.7595 9.05655 19.7702C8.98099 19.7809 8.90395 19.7734 8.83186 19.7484C6.7829 19.2556 5.56051 17.2869 5.19587 14.9091C4.59507 10.9915 7.18218 5.78419 13.7363 4.77909C19.003 3.97141 23.0557 7.2525 23.683 11.3427C24.5133 16.7572 22.1208 21.26 17.6857 21.9402C16.195 22.1688 14.673 21.5763 14.0527 20.7383C14.0527 20.7383 13.7394 24.0396 13.6614 24.682C13.5033 25.7775 13.1892 26.8448 12.7288 27.8513C14.7126 28.1208 16.7311 27.9606 18.6475 27.3814C20.5639 26.8023 22.3333 25.8177 23.8357 24.4946C25.3382 23.1715 26.5385 21.5408 27.3553 19.713C28.1721 17.8852 28.5863 15.9032 28.5697 13.9012C28.5532 11.8993 28.1063 9.92437 27.2594 8.11034C26.4125 6.29631 25.1854 4.68563 23.6613 3.38754C22.1372 2.08945 20.3518 1.1343 18.4261 0.586892C16.5004 0.0394797 14.4796 -0.0874513 12.5005 0.214813Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="icons flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                fill="none">
+                                <path
+                                    d="M22.2932 3.83319L24.7213 2.94805C24.7213 2.94805 22.9783 5.6254 22.6005 5.83716C22.6398 6.34318 22.7169 6.84557 22.831 7.34013C21.1869 28.7186 2.05343 22.3203 2.05343 22.3203C8.53928 21.4795 8.68318 18.7397 8.68318 18.7397C4.84123 18.7648 3.71327 16.4252 3.71327 16.4252C4.07766 16.5514 4.47578 16.5386 4.83137 16.3895C5.18696 16.2403 5.47502 15.9653 5.6404 15.6169C1.42102 15.1872 1.36516 11.1448 1.36516 11.1448C2.16855 11.5561 3.06408 11.7542 3.96599 11.7202C3.43059 11.2383 -1.07611 7.26315 0.867357 4.55507C0.867357 4.55507 4.44122 9.13475 11.875 8.45624L12.3606 8.27921C12.2201 7.93144 12.1294 7.56554 12.0913 7.19238C11.8774 5.79724 12.2264 4.37424 13.0616 3.23643C13.8969 2.09862 15.1499 1.33922 16.545 1.12526C20.052 0.58745 21.1108 2.47617 21.1108 2.47617L23.3853 0.58905C23.3352 0.596744 23.4689 3.14013 22.2932 3.83319Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+
+
+                    </div>
+                    <div class="endtxt absolute bottom-[3%] right-1/2 translate-x-[145%]">
+                        @2024<br>
+                        all right reserved
+                    </div>
+
+                </div>
+            </div>
+            <div class="div1 w-screen h-[100vh] relative"></div>
+            <div class="div2 w-screen h-[100vh] relative"></div>
+            <div class="div3 w-screen h-[100vh] relative"></div>
+            <div class="div4 w-screen h-[200vh] relative"></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
